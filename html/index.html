@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A comprehensive garage management web application.">
+    <meta name="author" content="Leweyiwnl">
+    <title>Garage Managment | Created By Leweyiwnl</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- START: TABLET -->
+    <div class="tablet-outline">
+
+        <!-- START: CONTAINER -->
+        <div class="container">
+            <div class="overlay-gradient"></div>
+
+            <!-- START: TOP BAR -->
+            <div class="top-bar">
+                <h1 class="logo-text">car <br>management</h1>
+
+                <div class="search-bar">
+                    <input id="search-input" type="text" placeholder="Search Owned Cars...">
+                    <img class="search-icon" src="./images/search-icon.png" alt="search-icon" />
+                </div>
+
+                <div class="exit-garage">
+
+                    <h2 class="exit-text">exit from <br>garage</h2>
+
+                    <button class="close-button">
+                        <img src="./images/close-icon.png" alt="close-icon" />
+                    </button>
+
+                </div>
+
+            </div>
+            <!-- END: TOP BAR -->
+
+            <!-- START: CAR VIEWER -->
+            <div class="car-viewer">
+
+                <!-- LEFT BUTTON -->
+                <button class="left-btn">
+                    <img src="./images/left-btn.png" alt="left-btn" />
+                </button>
+
+                <!-- START: CAR INFO TESTING -->
+                <div class="car-info">
+
+                    <div class="details-picture">
+
+                        <img src="./vehicleimages/lp700-4.png" alt="preview-car">
+
+                        <div class="vehicle-details">
+                            <h3 class="make">lamborghini</h3>
+                            <h3 class="model">lp700-4</h3>
+                        </div>
+
+                    </div>
+                        
+                    <div class="car-details">
+
+                        <div class="info numberplate">
+
+                            <div class="icon-text">
+                                <img src="./images/licenseplate-icon.png" alt="licenseplate-icon" />
+                                <h4 class="numberplate-text">number plate</h4>
+                            </div>
+                            
+                            <h5 class="numberplate-car">44FOH820</h5>
+
+                        </div>
+
+                        <div class="info carhealth">
+
+                            <div class="icon-text">
+                                <img src="./images/car-icon.png" alt="car-icon" />
+                                <h4 class="carhealth-text">car health</h4>
+                            </div>
+
+                            <h5 class="carhealth-car">97%</h5>
+
+                        </div>
+
+                        <div class="info fuellevel">
+
+                            <div class="icon-text">
+                                <img src="./images/fuel-icon.png" alt="fuel-icon" />
+                                <h4 class="fuellevel-text">fuel in car</h4>  
+                            </div>
+
+                            <h5 class="fuellevel-car">23% (4.5L)</h5>
+                        </div>
+
+                    </div>
+
+                    <div class="actionbuttons">
+
+                        <button class="transfercar-btn">
+                            <h2 class="btn-text">transfer car</h2>
+                        </button>
+
+                        <button class="spawncar-btn">
+                            <h2 class="btn-text">spawn car</h2>
+                        </button>
+
+                    </div>
+
+                </div>
+                <!-- END: CAR INFO TESTING -->
+
+                <!-- RIGHT BUTTON -->
+                <button class="right-btn">
+                    <img src="./images/right-btn.png" alt="right-btn" />
+                </button>
+
+            </div>
+            <!-- END: CAR VIEWER -->
+
+            <!-- START: MODAL POPUP (PART 1) -->
+            <div class="modal-overlay">
+
+                <div class="modal">
+
+                    <div class="m-top-bar">
+                        <h4>transfer car</h4>
+                        <button class="m-close-button">
+                            <img src="./images/close-icon-nobg.png" alt="close-icon" />
+                        </button>
+                    </div>
+
+                    <div class="m-dropdown">
+                        <div class="default-info">
+                            <h4 class="m-make-model-selected">Lamborghini lp700-4 (44foh820)</h4>
+                            <img src="./images/dropdown-icon.png" alt="dropdown-icon" />
+                        </div>
+
+                        <div class="m-dropdown-active">
+                            <h4 class="m-make-model">ASTON MARTIN VULCAN (5SVY9A4W)</h4>
+                        </div>
+
+                    </div>
+
+
+                    <div class="citizen-id">
+                        <h3 class="m-title">citizen id [1]</h3>
+                        <input id="citizen-id" type="text" placeholder="Enter Citizen ID...">
+                    </div>
+
+                    <div class="car-preview">
+                        <img src="./vehicleimages/lp700-4.png" alt="lp700-4" draggable="false" />
+                    </div>
+
+                    <div class="reason">
+                        <div class="title-reason">
+                            <h3 class="m-title">reason</h3>
+                            <button class="gift-btn">gift</button>
+                        </div>
+                        <input id="reason" type="text" placeholder="Enter A Reason (Optional)...">
+                    </div>
+
+                    <button class="m-transfercar-btn">transfer car</button>
+
+                </div>
+
+            </div>
+            <!-- END: MODAL POPUP (PART 1) -->
+        </div>
+        <!-- END: CONTAINER -->
+    </div>
+    <!-- END: TABLET -->
+</body>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./main.js" defer></script>
+</html>
